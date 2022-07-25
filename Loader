@@ -1,0 +1,915 @@
+--//Some Scripts Of The Scripts In The GUI Are Not Made By Me, So Credits To Who Made Them//--
+--//Discord: https://discordapp.com/invite/d8q9sfQ//--
+
+local PirsonHx = Instance.new("ScreenGui")
+local FunctionsHolder = Instance.new("TextLabel")
+local FH_Hold = Instance.new("Frame")
+local FH_List = Instance.new("UIListLayout")
+local F_EditM4A1 = Instance.new("TextButton")
+local F_EditRemington870 = Instance.new("TextButton")
+local F_EditM9 = Instance.new("TextButton")
+local F_EditTaser = Instance.new("TextButton")
+local F_EditAK47 = Instance.new("TextButton")
+local F_RemoveDoors = Instance.new("TextButton")
+local F_GetTools = Instance.new("TextButton")
+local F_GetWeapons = Instance.new("TextButton")
+local F_GetBtools = Instance.new("TextButton")
+local CombatHolder = Instance.new("TextLabel")
+local CB_Hold = Instance.new("Frame")
+local CB_List = Instance.new("UIListLayout")
+local C_ClickArrest = Instance.new("TextButton")
+local C_KillAura = Instance.new("TextButton")
+local C_ArrestAll = Instance.new("TextButton")
+local C_Bypass = Instance.new("TextButton")
+local LocalPlayerHolder = Instance.new("TextLabel")
+local LP_Hold = Instance.new("Frame")
+local LP_List = Instance.new("UIListLayout")
+local L_NoClip = Instance.new("TextButton")
+local L_WalkSpeed = Instance.new("TextButton")
+local WSInput = Instance.new("TextBox")
+local L_Fly = Instance.new("TextButton")
+local L_JumpPower = Instance.new("TextButton")
+local JPInput = Instance.new("TextBox")
+local L_Godmode = Instance.new("TextButton")
+local TeleportsHolder = Instance.new("TextLabel")
+local TH_Hold = Instance.new("Frame")
+local T_CriminalCarSpawn = Instance.new("TextButton")
+local TH_List = Instance.new("UIListLayout")
+local T_GaurdCarSpawn = Instance.new("TextButton")
+local T_MainHall = Instance.new("TextButton")
+local T_Cafe = Instance.new("TextButton")
+local T_GaurdArmory = Instance.new("TextButton")
+local T_Yard = Instance.new("TextButton")
+local T_OutsidePrison = Instance.new("TextButton")
+local T_CriminalBase = Instance.new("TextButton")
+local UIName = Instance.new("TextLabel")
+local UIVersion = Instance.new("TextLabel")
+PirsonHx.Name = "PirsonHx"
+PirsonHx.Parent = game.CoreGui
+FunctionsHolder.Name = "FunctionsHolder"
+FunctionsHolder.Parent = PirsonHx
+FunctionsHolder.Active = true
+FunctionsHolder.BackgroundColor3 = Color3.new(0, 0.333333, 1)
+FunctionsHolder.BorderSizePixel = 0
+FunctionsHolder.Position = UDim2.new(0.28359592, 0, 0.110701106, 0)
+FunctionsHolder.Size = UDim2.new(0, 229, 0, 31)
+FunctionsHolder.Font = Enum.Font.SourceSansBold
+FunctionsHolder.Text = "Functions"
+FunctionsHolder.TextColor3 = Color3.new(1, 1, 1)
+FunctionsHolder.TextSize = 16
+FH_Hold.Name = "FH_Hold"
+FH_Hold.Parent = FunctionsHolder
+FH_Hold.Active = true
+FH_Hold.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+FH_Hold.BackgroundTransparency = 0.55000001192093
+FH_Hold.BorderSizePixel = 0
+FH_Hold.Position = UDim2.new(0.0312086884, 0, 1, 0)
+FH_Hold.Size = UDim2.new(0, 215, 0, 219)
+FH_List.Name = "FH_List"
+FH_List.Parent = FH_Hold
+FH_List.HorizontalAlignment = Enum.HorizontalAlignment.Center
+FH_List.Padding = UDim.new(0, 3)
+F_EditM4A1.Name = "F_EditM4A1"
+F_EditM4A1.Parent = FH_Hold
+F_EditM4A1.BackgroundColor3 = Color3.new(1, 1, 1)
+F_EditM4A1.BackgroundTransparency = 1
+F_EditM4A1.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+F_EditM4A1.Size = UDim2.new(0, 200, 0, 21)
+F_EditM4A1.Font = Enum.Font.SourceSansBold
+F_EditM4A1.Text = "> Edit M4A1"
+F_EditM4A1.TextColor3 = Color3.new(1, 1, 1)
+F_EditM4A1.TextSize = 15
+F_EditM4A1.TextWrapped = true
+F_EditM4A1.TextXAlignment = Enum.TextXAlignment.Left
+F_EditRemington870.Name = "F_EditRemington870"
+F_EditRemington870.Parent = FH_Hold
+F_EditRemington870.BackgroundColor3 = Color3.new(1, 1, 1)
+F_EditRemington870.BackgroundTransparency = 1
+F_EditRemington870.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+F_EditRemington870.Size = UDim2.new(0, 200, 0, 21)
+F_EditRemington870.Font = Enum.Font.SourceSansBold
+F_EditRemington870.Text = "> Edit Remington 870"
+F_EditRemington870.TextColor3 = Color3.new(1, 1, 1)
+F_EditRemington870.TextSize = 15
+F_EditRemington870.TextWrapped = true
+F_EditRemington870.TextXAlignment = Enum.TextXAlignment.Left
+F_EditM9.Name = "F_EditM9"
+F_EditM9.Parent = FH_Hold
+F_EditM9.BackgroundColor3 = Color3.new(1, 1, 1)
+F_EditM9.BackgroundTransparency = 1
+F_EditM9.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+F_EditM9.Size = UDim2.new(0, 200, 0, 21)
+F_EditM9.Font = Enum.Font.SourceSansBold
+F_EditM9.Text = "> Edit M9"
+F_EditM9.TextColor3 = Color3.new(1, 1, 1)
+F_EditM9.TextSize = 15
+F_EditM9.TextWrapped = true
+F_EditM9.TextXAlignment = Enum.TextXAlignment.Left
+F_EditTaser.Name = "F_EditTaser"
+F_EditTaser.Parent = FH_Hold
+F_EditTaser.BackgroundColor3 = Color3.new(1, 1, 1)
+F_EditTaser.BackgroundTransparency = 1
+F_EditTaser.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+F_EditTaser.Size = UDim2.new(0, 200, 0, 21)
+F_EditTaser.Font = Enum.Font.SourceSansBold
+F_EditTaser.Text = "> Edit Taser"
+F_EditTaser.TextColor3 = Color3.new(1, 1, 1)
+F_EditTaser.TextSize = 15
+F_EditTaser.TextWrapped = true
+F_EditTaser.TextXAlignment = Enum.TextXAlignment.Left
+F_EditAK47.Name = "F_EditAK47"
+F_EditAK47.Parent = FH_Hold
+F_EditAK47.BackgroundColor3 = Color3.new(1, 1, 1)
+F_EditAK47.BackgroundTransparency = 1
+F_EditAK47.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+F_EditAK47.Size = UDim2.new(0, 200, 0, 21)
+F_EditAK47.Font = Enum.Font.SourceSansBold
+F_EditAK47.Text = "> Edit AK47"
+F_EditAK47.TextColor3 = Color3.new(1, 1, 1)
+F_EditAK47.TextSize = 15
+F_EditAK47.TextWrapped = true
+F_EditAK47.TextXAlignment = Enum.TextXAlignment.Left
+F_RemoveDoors.Name = "F_RemoveDoors"
+F_RemoveDoors.Parent = FH_Hold
+F_RemoveDoors.BackgroundColor3 = Color3.new(1, 1, 1)
+F_RemoveDoors.BackgroundTransparency = 1
+F_RemoveDoors.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+F_RemoveDoors.Size = UDim2.new(0, 200, 0, 21)
+F_RemoveDoors.Font = Enum.Font.SourceSansBold
+F_RemoveDoors.Text = "> Remove Doors"
+F_RemoveDoors.TextColor3 = Color3.new(1, 1, 1)
+F_RemoveDoors.TextSize = 15
+F_RemoveDoors.TextWrapped = true
+F_RemoveDoors.TextXAlignment = Enum.TextXAlignment.Left
+F_GetTools.Name = "F_GetTools"
+F_GetTools.Parent = FH_Hold
+F_GetTools.BackgroundColor3 = Color3.new(1, 1, 1)
+F_GetTools.BackgroundTransparency = 1
+F_GetTools.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+F_GetTools.Size = UDim2.new(0, 200, 0, 21)
+F_GetTools.Font = Enum.Font.SourceSansBold
+F_GetTools.Text = "> Get Tools"
+F_GetTools.TextColor3 = Color3.new(1, 1, 1)
+F_GetTools.TextSize = 15
+F_GetTools.TextWrapped = true
+F_GetTools.TextXAlignment = Enum.TextXAlignment.Left
+F_GetWeapons.Name = "F_GetWeapons"
+F_GetWeapons.Parent = FH_Hold
+F_GetWeapons.BackgroundColor3 = Color3.new(1, 1, 1)
+F_GetWeapons.BackgroundTransparency = 1
+F_GetWeapons.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+F_GetWeapons.Size = UDim2.new(0, 200, 0, 21)
+F_GetWeapons.Font = Enum.Font.SourceSansBold
+F_GetWeapons.Text = "> Get Weapons"
+F_GetWeapons.TextColor3 = Color3.new(1, 1, 1)
+F_GetWeapons.TextSize = 15
+F_GetWeapons.TextWrapped = true
+F_GetWeapons.TextXAlignment = Enum.TextXAlignment.Left
+F_GetBtools.Name = "F_GetBtools"
+F_GetBtools.Parent = FH_Hold
+F_GetBtools.BackgroundColor3 = Color3.new(1, 1, 1)
+F_GetBtools.BackgroundTransparency = 1
+F_GetBtools.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+F_GetBtools.Size = UDim2.new(0, 200, 0, 21)
+F_GetBtools.Font = Enum.Font.SourceSansBold
+F_GetBtools.Text = "> Get Btools"
+F_GetBtools.TextColor3 = Color3.new(1, 1, 1)
+F_GetBtools.TextSize = 15
+F_GetBtools.TextWrapped = true
+F_GetBtools.TextXAlignment = Enum.TextXAlignment.Left
+CombatHolder.Name = "CombatHolder"
+CombatHolder.Parent = PirsonHx
+CombatHolder.Active = true
+CombatHolder.BackgroundColor3 = Color3.new(0, 0.333333, 1)
+CombatHolder.BorderSizePixel = 0
+CombatHolder.Position = UDim2.new(0.503243744, 0, 0.110701106, 0)
+CombatHolder.Size = UDim2.new(0, 229, 0, 31)
+CombatHolder.Font = Enum.Font.SourceSansBold
+CombatHolder.Text = "Combat"
+CombatHolder.TextColor3 = Color3.new(1, 1, 1)
+CombatHolder.TextSize = 16
+CB_Hold.Name = "CB_Hold"
+CB_Hold.Parent = CombatHolder
+CB_Hold.Active = true
+CB_Hold.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+CB_Hold.BackgroundTransparency = 0.55000001192093
+CB_Hold.BorderSizePixel = 0
+CB_Hold.Position = UDim2.new(0.0312086884, 0, 1, 0)
+CB_Hold.Size = UDim2.new(0, 215, 0, 96)
+CB_List.Name = "CB_List"
+CB_List.Parent = CB_Hold
+CB_List.HorizontalAlignment = Enum.HorizontalAlignment.Center
+CB_List.Padding = UDim.new(0, 3)
+C_ClickArrest.Name = "C_ClickArrest"
+C_ClickArrest.Parent = CB_Hold
+C_ClickArrest.BackgroundColor3 = Color3.new(1, 1, 1)
+C_ClickArrest.BackgroundTransparency = 1
+C_ClickArrest.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+C_ClickArrest.Size = UDim2.new(0, 200, 0, 21)
+C_ClickArrest.Font = Enum.Font.SourceSansBold
+C_ClickArrest.Text = "> Click Arrest"
+C_ClickArrest.TextColor3 = Color3.new(1, 1, 1)
+C_ClickArrest.TextSize = 15
+C_ClickArrest.TextWrapped = true
+C_ClickArrest.TextXAlignment = Enum.TextXAlignment.Left
+C_KillAura.Name = "C_KillAura"
+C_KillAura.Parent = CB_Hold
+C_KillAura.BackgroundColor3 = Color3.new(1, 1, 1)
+C_KillAura.BackgroundTransparency = 1
+C_KillAura.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+C_KillAura.Size = UDim2.new(0, 200, 0, 21)
+C_KillAura.Font = Enum.Font.SourceSansBold
+C_KillAura.Text = "> Kill Aura (K)"
+C_KillAura.TextColor3 = Color3.new(1, 1, 1)
+C_KillAura.TextSize = 15
+C_KillAura.TextWrapped = true
+C_KillAura.TextXAlignment = Enum.TextXAlignment.Left
+C_ArrestAll.Name = "C_ArrestAll"
+C_ArrestAll.Parent = CB_Hold
+C_ArrestAll.BackgroundColor3 = Color3.new(1, 1, 1)
+C_ArrestAll.BackgroundTransparency = 1
+C_ArrestAll.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+C_ArrestAll.Size = UDim2.new(0, 200, 0, 21)
+C_ArrestAll.Font = Enum.Font.SourceSansBold
+C_ArrestAll.Text = "> Arrest All"
+C_ArrestAll.TextColor3 = Color3.new(1, 1, 1)
+C_ArrestAll.TextSize = 15
+C_ArrestAll.TextWrapped = true
+C_ArrestAll.TextXAlignment = Enum.TextXAlignment.Left
+C_Bypass.Name = "C_Bypass"
+C_Bypass.Parent = CB_Hold
+C_Bypass.BackgroundColor3 = Color3.new(1, 1, 1)
+C_Bypass.BackgroundTransparency = 1
+C_Bypass.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+C_Bypass.Size = UDim2.new(0, 200, 0, 21)
+C_Bypass.Font = Enum.Font.SourceSansBold
+C_Bypass.Text = "> Bypass (Arrest & Taser)"
+C_Bypass.TextColor3 = Color3.new(1, 1, 1)
+C_Bypass.TextSize = 15
+C_Bypass.TextWrapped = true
+C_Bypass.TextXAlignment = Enum.TextXAlignment.Left
+LocalPlayerHolder.Name = "LocalPlayerHolder"
+LocalPlayerHolder.Parent = PirsonHx
+LocalPlayerHolder.Active = true
+LocalPlayerHolder.BackgroundColor3 = Color3.new(0, 0.333333, 1)
+LocalPlayerHolder.BorderSizePixel = 0
+LocalPlayerHolder.Position = UDim2.new(0.722891569, 0, 0.110701106, 0)
+LocalPlayerHolder.Size = UDim2.new(0, 229, 0, 31)
+LocalPlayerHolder.Font = Enum.Font.SourceSansBold
+LocalPlayerHolder.Text = "LocalPlayer"
+LocalPlayerHolder.TextColor3 = Color3.new(1, 1, 1)
+LocalPlayerHolder.TextSize = 16
+LP_Hold.Name = "LP_Hold"
+LP_Hold.Parent = LocalPlayerHolder
+LP_Hold.Active = true
+LP_Hold.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+LP_Hold.BackgroundTransparency = 0.55000001192093
+LP_Hold.BorderSizePixel = 0
+LP_Hold.Position = UDim2.new(0.0312086884, 0, 1, 0)
+LP_Hold.Size = UDim2.new(0, 215, 0, 120)
+LP_List.Name = "LP_List"
+LP_List.Parent = LP_Hold
+LP_List.HorizontalAlignment = Enum.HorizontalAlignment.Center
+LP_List.Padding = UDim.new(0, 3)
+L_NoClip.Name = "L_NoClip"
+L_NoClip.Parent = LP_Hold
+L_NoClip.BackgroundColor3 = Color3.new(1, 1, 1)
+L_NoClip.BackgroundTransparency = 1
+L_NoClip.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+L_NoClip.Size = UDim2.new(0, 200, 0, 21)
+L_NoClip.Font = Enum.Font.SourceSansBold
+L_NoClip.Text = "> NoClip"
+L_NoClip.TextColor3 = Color3.new(1, 1, 1)
+L_NoClip.TextSize = 15
+L_NoClip.TextWrapped = true
+L_NoClip.TextXAlignment = Enum.TextXAlignment.Left
+L_WalkSpeed.Name = "L_WalkSpeed"
+L_WalkSpeed.Parent = LP_Hold
+L_WalkSpeed.BackgroundColor3 = Color3.new(1, 1, 1)
+L_WalkSpeed.BackgroundTransparency = 1
+L_WalkSpeed.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+L_WalkSpeed.Size = UDim2.new(0, 200, 0, 21)
+L_WalkSpeed.Font = Enum.Font.SourceSansBold
+L_WalkSpeed.Text = "> Walk Speed"
+L_WalkSpeed.TextColor3 = Color3.new(1, 1, 1)
+L_WalkSpeed.TextSize = 15
+L_WalkSpeed.TextWrapped = true
+L_WalkSpeed.TextXAlignment = Enum.TextXAlignment.Left
+WSInput.Name = "WSInput"
+WSInput.Parent = L_WalkSpeed
+WSInput.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+WSInput.BackgroundTransparency = 0.60000002384186
+WSInput.BorderSizePixel = 0
+WSInput.Position = UDim2.new(0.709999979, 0, 0, 0)
+WSInput.Size = UDim2.new(0, 58, 0, 21)
+WSInput.Font = Enum.Font.SourceSansBold
+WSInput.PlaceholderColor3 = Color3.new(1, 1, 1)
+WSInput.Text = "100"
+WSInput.TextColor3 = Color3.new(1, 1, 1)
+WSInput.TextSize = 15
+WSInput.TextStrokeColor3 = Color3.new(1, 1, 1)
+L_Fly.Name = "L_Fly"
+L_Fly.Parent = LP_Hold
+L_Fly.BackgroundColor3 = Color3.new(1, 1, 1)
+L_Fly.BackgroundTransparency = 1
+L_Fly.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+L_Fly.Size = UDim2.new(0, 200, 0, 21)
+L_Fly.Font = Enum.Font.SourceSansBold
+L_Fly.Text = "> Fly (E)"
+L_Fly.TextColor3 = Color3.new(1, 1, 1)
+L_Fly.TextSize = 15
+L_Fly.TextWrapped = true
+L_Fly.TextXAlignment = Enum.TextXAlignment.Left
+L_JumpPower.Name = "L_JumpPower"
+L_JumpPower.Parent = LP_Hold
+L_JumpPower.BackgroundColor3 = Color3.new(1, 1, 1)
+L_JumpPower.BackgroundTransparency = 1
+L_JumpPower.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+L_JumpPower.Size = UDim2.new(0, 200, 0, 21)
+L_JumpPower.Font = Enum.Font.SourceSansBold
+L_JumpPower.Text = "> Jump Power"
+L_JumpPower.TextColor3 = Color3.new(1, 1, 1)
+L_JumpPower.TextSize = 15
+L_JumpPower.TextWrapped = true
+L_JumpPower.TextXAlignment = Enum.TextXAlignment.Left
+JPInput.Name = "JPInput"
+JPInput.Parent = L_JumpPower
+JPInput.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+JPInput.BackgroundTransparency = 0.60000002384186
+JPInput.BorderSizePixel = 0
+JPInput.Position = UDim2.new(0.709999979, 0, 0, 0)
+JPInput.Size = UDim2.new(0, 58, 0, 21)
+JPInput.Font = Enum.Font.SourceSansBold
+JPInput.PlaceholderColor3 = Color3.new(1, 1, 1)
+JPInput.Text = "100"
+JPInput.TextColor3 = Color3.new(1, 1, 1)
+JPInput.TextSize = 15
+JPInput.TextStrokeColor3 = Color3.new(1, 1, 1)
+L_Godmode.Name = "L_Godmode"
+L_Godmode.Parent = LP_Hold
+L_Godmode.BackgroundColor3 = Color3.new(1, 1, 1)
+L_Godmode.BackgroundTransparency = 1
+L_Godmode.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+L_Godmode.Size = UDim2.new(0, 200, 0, 21)
+L_Godmode.Font = Enum.Font.SourceSansBold
+L_Godmode.Text = "> Godmode"
+L_Godmode.TextColor3 = Color3.new(1, 1, 1)
+L_Godmode.TextSize = 15
+L_Godmode.TextWrapped = true
+L_Godmode.TextXAlignment = Enum.TextXAlignment.Left
+TeleportsHolder.Name = "TeleportsHolder"
+TeleportsHolder.Parent = PirsonHx
+TeleportsHolder.Active = true
+TeleportsHolder.BackgroundColor3 = Color3.new(0, 0.333333, 1)
+TeleportsHolder.BorderSizePixel = 0
+TeleportsHolder.Position = UDim2.new(0.0639481023, 0, 0.110701106, 0)
+TeleportsHolder.Size = UDim2.new(0, 229, 0, 31)
+TeleportsHolder.Font = Enum.Font.SourceSansBold
+TeleportsHolder.Text = "Teleports"
+TeleportsHolder.TextColor3 = Color3.new(1, 1, 1)
+TeleportsHolder.TextSize = 16
+TH_Hold.Name = "TH_Hold"
+TH_Hold.Parent = TeleportsHolder
+TH_Hold.Active = true
+TH_Hold.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+TH_Hold.BackgroundTransparency = 0.55000001192093
+TH_Hold.BorderSizePixel = 0
+TH_Hold.Position = UDim2.new(0.0312086884, 0, 1, 0)
+TH_Hold.Size = UDim2.new(0, 215, 0, 199)
+T_CriminalCarSpawn.Name = "T_CriminalCarSpawn"
+T_CriminalCarSpawn.Parent = TH_Hold
+T_CriminalCarSpawn.BackgroundColor3 = Color3.new(1, 1, 1)
+T_CriminalCarSpawn.BackgroundTransparency = 1
+T_CriminalCarSpawn.BorderSizePixel = 0
+T_CriminalCarSpawn.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+T_CriminalCarSpawn.Size = UDim2.new(0, 200, 0, 21)
+T_CriminalCarSpawn.AutoButtonColor = false
+T_CriminalCarSpawn.Font = Enum.Font.SourceSansBold
+T_CriminalCarSpawn.Text = "> Criminal Car Spawn"
+T_CriminalCarSpawn.TextColor3 = Color3.new(1, 1, 1)
+T_CriminalCarSpawn.TextSize = 15
+T_CriminalCarSpawn.TextWrapped = true
+T_CriminalCarSpawn.TextXAlignment = Enum.TextXAlignment.Left
+TH_List.Name = "TH_List"
+TH_List.Parent = TH_Hold
+TH_List.HorizontalAlignment = Enum.HorizontalAlignment.Center
+TH_List.Padding = UDim.new(0, 3)
+T_GaurdCarSpawn.Name = "T_GaurdCarSpawn"
+T_GaurdCarSpawn.Parent = TH_Hold
+T_GaurdCarSpawn.BackgroundColor3 = Color3.new(1, 1, 1)
+T_GaurdCarSpawn.BackgroundTransparency = 1
+T_GaurdCarSpawn.BorderSizePixel = 0
+T_GaurdCarSpawn.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+T_GaurdCarSpawn.Size = UDim2.new(0, 200, 0, 21)
+T_GaurdCarSpawn.AutoButtonColor = false
+T_GaurdCarSpawn.Font = Enum.Font.SourceSansBold
+T_GaurdCarSpawn.Text = "> Gaurd Car Spawn"
+T_GaurdCarSpawn.TextColor3 = Color3.new(1, 1, 1)
+T_GaurdCarSpawn.TextSize = 15
+T_GaurdCarSpawn.TextWrapped = true
+T_GaurdCarSpawn.TextXAlignment = Enum.TextXAlignment.Left
+T_MainHall.Name = "T_MainHall"
+T_MainHall.Parent = TH_Hold
+T_MainHall.BackgroundColor3 = Color3.new(1, 1, 1)
+T_MainHall.BackgroundTransparency = 1
+T_MainHall.BorderSizePixel = 0
+T_MainHall.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+T_MainHall.Size = UDim2.new(0, 200, 0, 21)
+T_MainHall.AutoButtonColor = false
+T_MainHall.Font = Enum.Font.SourceSansBold
+T_MainHall.Text = "> Main Hall"
+T_MainHall.TextColor3 = Color3.new(1, 1, 1)
+T_MainHall.TextSize = 15
+T_MainHall.TextWrapped = true
+T_MainHall.TextXAlignment = Enum.TextXAlignment.Left
+T_Cafe.Name = "T_Cafe"
+T_Cafe.Parent = TH_Hold
+T_Cafe.BackgroundColor3 = Color3.new(1, 1, 1)
+T_Cafe.BackgroundTransparency = 1
+T_Cafe.BorderSizePixel = 0
+T_Cafe.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+T_Cafe.Size = UDim2.new(0, 200, 0, 21)
+T_Cafe.AutoButtonColor = false
+T_Cafe.Font = Enum.Font.SourceSansBold
+T_Cafe.Text = "> Cafe"
+T_Cafe.TextColor3 = Color3.new(1, 1, 1)
+T_Cafe.TextSize = 15
+T_Cafe.TextWrapped = true
+T_Cafe.TextXAlignment = Enum.TextXAlignment.Left
+T_GaurdArmory.Name = "T_GaurdArmory"
+T_GaurdArmory.Parent = TH_Hold
+T_GaurdArmory.BackgroundColor3 = Color3.new(1, 1, 1)
+T_GaurdArmory.BackgroundTransparency = 1
+T_GaurdArmory.BorderSizePixel = 0
+T_GaurdArmory.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+T_GaurdArmory.Size = UDim2.new(0, 200, 0, 21)
+T_GaurdArmory.AutoButtonColor = false
+T_GaurdArmory.Font = Enum.Font.SourceSansBold
+T_GaurdArmory.Text = "> Gaurd Armory"
+T_GaurdArmory.TextColor3 = Color3.new(1, 1, 1)
+T_GaurdArmory.TextSize = 15
+T_GaurdArmory.TextWrapped = true
+T_GaurdArmory.TextXAlignment = Enum.TextXAlignment.Left
+T_Yard.Name = "T_Yard"
+T_Yard.Parent = TH_Hold
+T_Yard.BackgroundColor3 = Color3.new(1, 1, 1)
+T_Yard.BackgroundTransparency = 1
+T_Yard.BorderSizePixel = 0
+T_Yard.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+T_Yard.Size = UDim2.new(0, 200, 0, 21)
+T_Yard.AutoButtonColor = false
+T_Yard.Font = Enum.Font.SourceSansBold
+T_Yard.Text = "> Yard"
+T_Yard.TextColor3 = Color3.new(1, 1, 1)
+T_Yard.TextSize = 15
+T_Yard.TextWrapped = true
+T_Yard.TextXAlignment = Enum.TextXAlignment.Left
+T_OutsidePrison.Name = "T_OutsidePrison"
+T_OutsidePrison.Parent = TH_Hold
+T_OutsidePrison.BackgroundColor3 = Color3.new(1, 1, 1)
+T_OutsidePrison.BackgroundTransparency = 1
+T_OutsidePrison.BorderSizePixel = 0
+T_OutsidePrison.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+T_OutsidePrison.Size = UDim2.new(0, 200, 0, 21)
+T_OutsidePrison.AutoButtonColor = false
+T_OutsidePrison.Font = Enum.Font.SourceSansBold
+T_OutsidePrison.Text = "> Outside Prison"
+T_OutsidePrison.TextColor3 = Color3.new(1, 1, 1)
+T_OutsidePrison.TextSize = 15
+T_OutsidePrison.TextWrapped = true
+T_OutsidePrison.TextXAlignment = Enum.TextXAlignment.Left
+T_CriminalBase.Name = "T_CriminalBase"
+T_CriminalBase.Parent = TH_Hold
+T_CriminalBase.BackgroundColor3 = Color3.new(1, 1, 1)
+T_CriminalBase.BackgroundTransparency = 1
+T_CriminalBase.BorderSizePixel = 0
+T_CriminalBase.Position = UDim2.new(0.0325581394, 0, 0.0452261306, 0)
+T_CriminalBase.Size = UDim2.new(0, 200, 0, 21)
+T_CriminalBase.AutoButtonColor = false
+T_CriminalBase.Font = Enum.Font.SourceSansBold
+T_CriminalBase.Text = "> Criminal Base"
+T_CriminalBase.TextColor3 = Color3.new(1, 1, 1)
+T_CriminalBase.TextSize = 15
+T_CriminalBase.TextWrapped = true
+T_CriminalBase.TextXAlignment = Enum.TextXAlignment.Left
+UIName.Name = "UIName"
+UIName.Parent = PirsonHx
+UIName.Active = true
+UIName.BackgroundColor3 = Color3.new(0, 0.333333, 1)
+UIName.BackgroundTransparency = 1
+UIName.BorderSizePixel = 0
+UIName.Position = UDim2.new(0.413345695, 0, 0.0129151288, 0)
+UIName.Size = UDim2.new(0, 159, 0, 36)
+UIName.Font = Enum.Font.SourceSans
+UIName.Text = "PrisonHx"
+UIName.TextColor3 = Color3.new(1, 1, 1)
+UIName.TextSize = 40
+UIVersion.Name = "UIVersion"
+UIVersion.Parent = PirsonHx
+UIVersion.Active = true
+UIVersion.BackgroundColor3 = Color3.new(0, 0.333333, 1)
+UIVersion.BackgroundTransparency = 1
+UIVersion.BorderSizePixel = 0
+UIVersion.Position = UDim2.new(0.539388359, 0, 0.0405904055, 0)
+UIVersion.Size = UDim2.new(0, 51, 0, 21)
+UIVersion.Font = Enum.Font.SourceSans
+UIVersion.Text = "V1.0"
+UIVersion.TextColor3 = Color3.new(1, 1, 1)
+UIVersion.TextSize = 20
+
+local PirsonHx = game.CoreGui.PirsonHx
+local TeleportsHolder = PirsonHx.TeleportsHolder
+local TH_Hold = TeleportsHolder.TH_Hold
+local FunctionsHolder = PirsonHx.FunctionsHolder
+local FH_Hold = FunctionsHolder.FH_Hold
+local CombatHolder = PirsonHx.CombatHolder
+local CB_Hold = CombatHolder.CB_Hold
+local LocalPlayerHolder = PirsonHx.LocalPlayerHolder
+local LP_Hold = LocalPlayerHolder.LP_Hold
+local BlurEffect = Instance.new('BlurEffect', game.Lighting)
+
+--//Variables//--
+local UI_Open = true
+local UI_Elements = {TeleportsHolder, FunctionsHolder, CombatHolder, LocalPlayerHolder}
+local ipit = game:GetService("UserInputService")
+game.Lighting.Blur.Enabled = true
+pcall(function() local starterGui = game:GetService('StarterGui') starterGui:SetCore("TopbarEnabled", false) end)
+
+--//Other - Functions//--
+TeleportsHolder.Draggable = true
+FunctionsHolder.Draggable = true
+CombatHolder.Draggable = true
+LocalPlayerHolder.Draggable = true
+ipit.InputBegan:Connect(function(input)
+    if input.KeyCode == Enum.KeyCode.RightShift then
+		if UI_Open == true then
+			for i, v in pairs(UI_Elements) do
+				if v.ClassName == "TextLabel" then
+					v.Visible = false
+				end
+			end
+			game.Lighting.Blur.Enabled = false
+			pcall(function() local starterGui = game:GetService('StarterGui') starterGui:SetCore("TopbarEnabled", true) end)
+			PirsonHx.UIName.Visible = false
+			PirsonHx.UIVersion.Visible = false
+			wait(.2)
+			UI_Open = false
+		elseif UI_Open == false then
+			for i, v in pairs(UI_Elements) do
+				if v.ClassName == "TextLabel" then
+					v.Visible = true
+				end
+			end
+			game.Lighting.Blur.Enabled = true
+			pcall(function() local starterGui = game:GetService('StarterGui') starterGui:SetCore("TopbarEnabled", false) end)
+			PirsonHx.UIName.Visible = true
+			PirsonHx.UIVersion.Visible = true
+			wait(.2)
+			UI_Open = true
+		end
+    end
+end)
+
+function singleClick(btn)
+	btn.TextColor3 = Color3.new(0, 255, 0)
+	wait(.3)
+	btn.TextColor3 = Color3.new(255,255,255)
+end
+function longClick(btn)
+	btn.TextColor3 = Color3.new(0, 255, 0)
+end
+
+--//Color - Functions//--
+function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+counter = 0 counter1 = 0
+local TH_Color = coroutine.wrap(function() while wait()do TeleportsHolder.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1) counter = counter + 0.005 end end)
+local FH_Color = coroutine.wrap(function() while wait()do FunctionsHolder.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)  end end)
+local CB_Color = coroutine.wrap(function() while wait()do CombatHolder.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)  end end)
+local LP_Color = coroutine.wrap(function() while wait()do LocalPlayerHolder.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)  end end)
+local N_Color = coroutine.wrap(function() while wait()do PirsonHx.UIName.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)  end end)
+TH_Color()
+FH_Color()
+CB_Color()
+LP_Color()
+N_Color()
+
+--//Functions - Combat//--
+CB_Hold.C_ClickArrest.MouseButton1Click:Connect(function()
+	longClick(CB_Hold.C_ClickArrest)
+	
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local arrestEvent = game.Workspace.Remote.arrest
+	mouse.Button1Down:connect(function()
+		local obj = mouse.Target
+		local response = arrestEvent:InvokeServer(obj)
+	end)
+end)
+CB_Hold.C_KillAura.MouseButton1Click:Connect(function()
+	singleClick(CB_Hold.C_KillAura)
+	
+	mainRemotes = game.ReplicatedStorage
+	meleeRemote = mainRemotes['meleeEvent']
+	killAura = false
+	contextactionservice = game.ContextActionService
+	function toggleKillAura(actionName, inputState, inputObject)
+		print('Doing the action : ' .. actionName)
+		if inputState == Enum.UserInputState.Begin then
+			if killAura == true then
+				killAura = false
+			else
+				killAura = true
+			end
+		end
+	end
+	contextactionservice:BindAction('ToggleKillAura', toggleKillAura, false, Enum.KeyCode.K)
+	while wait() do
+		if killAura == true then
+			for _, plr in pairs (game:GetService('Players'):GetChildren()) do
+				if plr.Name ~= game.Players.LocalPlayer.Name then
+					meleeRemote:FireServer(plr)
+				end
+			end
+		end
+	end
+end)
+CB_Hold.C_ArrestAll.MouseButton1Click:Connect(function()
+	singleClick(CB_Hold.C_ArrestAll)
+	
+	local Player = game.Players.LocalPlayer
+	local cpos = Player.Character.HumanoidRootPart.CFrame
+	for i,v in pairs(game.Teams.Criminals:GetPlayers()) do
+		if v.Name ~= Player.Name then
+			local i = 10
+			repeat
+				wait()
+				i = i-1
+				game.Workspace.Remote.arrest:InvokeServer(v.Character.HumanoidRootPart)
+				Player.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 1)
+			until i == 0
+		end
+	end
+end)
+
+CB_Hold.C_Bypass.MouseButton1Click:Connect(function()
+	singleClick(CB_Hold.C_Bypass)
+	
+	game.Players.LocalPlayer.CharacterAdded:connect(function()
+  		game.Workspace:WaitForChild(game.Players.LocalPlayer.Name)
+  		game.Players.LocalPlayer.Character.ClientInputHandler.Disabled = true
+	end)
+end)
+
+--//Functions - LocalPlayer//--
+_G.GodMode = false
+LP_Hold.L_Godmode.MouseButton1Click:Connect(function()
+	if _G.GodMode == false then
+		lplayer = game:GetService("Players").LocalPlayer
+        lplayer.Character.Humanoid.Name = 1
+        local l = lplayer.Character["1"]:Clone()
+        l.Parent = lplayer.Character
+        l.Name = "Humanoid"
+        wait(0.1)
+        lplayer.Character["1"]:Destroy()
+        game:GetService("Workspace").CurrentCamera.CameraSubject = lplayer.Character
+        lplayer.Character.Animate.Disabled = true
+        wait(0.1)
+        lplayer.Character.Animate.Disabled             = false
+        lplayer.Character.Humanoid.DisplayDistanceType = "None"
+		wait(.5)
+		LP_Hold.L_Godmode.TextColor3 = Color3.new(0, 255, 0)
+		_G.GodMode = true
+	elseif _G.GodMode == true then
+		lplayer.Character.Humanoid.Health = 0
+		local a1 = Instance.new("Model", workspace)
+		local a2 = Instance.new("Part", a1)
+		a2.CanCollide = true
+		a2.Anchored = true
+		a2.CFrame = CFrame.new(10000, 10000, 10000)
+		a2.Name = "Torso"
+		local a3 = Instance.new("Humanoid", a1)
+		a3.MaxHealth=100;a3.Health=100
+		game.Players.LocalPlayer.Character = a1
+		a3.Health=0
+		wait(.5)
+		LP_Hold.L_Godmode.TextColor3 = Color3.new(255, 255, 255)
+		_G.GodMode = false
+	end
+end)
+
+LP_Hold.L_JumpPower.MouseButton1Click:Connect(function()
+	singleClick(LP_Hold.L_JumpPower)
+	if LP_Hold.L_JumpPower.JPInput.Text ~= "" or LP_Hold.L_JumpPower.JPInput.Text ~= " " then
+		LP_Hold.L_JumpPower.JPInput.Text = "100"
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(LP_Hold.L_JumpPower.JPInput.Text)
+	else
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(LP_Hold.L_JumpPower.JPInput.Text)
+	end
+end)
+
+LP_Hold.L_NoClip.MouseButton1Click:Connect(function()
+	singleClick(LP_Hold.L_NoClip)
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end)
+
+LP_Hold.L_WalkSpeed.MouseButton1Click:Connect(function()
+	singleClick(LP_Hold.L_WalkSpeed)
+	if LP_Hold.L_WalkSpeed.WSInput.Text ~= "" or LP_Hold.L_WalkSpeed.WSInput.Text ~= " " then
+		LP_Hold.L_WalkSpeed.WSInput.Text = "100"
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(LP_Hold.L_WalkSpeed.WSInput.Text)
+	else
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(LP_Hold.L_WalkSpeed.WSInput.Text)
+	end
+end)
+
+LP_Hold.L_Fly.MouseButton1Click:Connect(function()
+	longClick(LP_Hold.L_Fly)
+	loadstring(game:HttpGet('https://pastebin.com/raw/C58c6NnB', true))()
+end)
+
+--//Functions - Functions//--
+FH_Hold.F_EditM4A1.MouseButton1Click:Connect(function()
+	singleClick(FH_Hold.F_EditM4A1)
+	if game.Players.LocalPlayer.Backpack:FindFirstChild('M4A1') then
+		local player = game:GetService("Players").LocalPlayer
+		local gun = player.Backpack:FindFirstChild("M4A1")
+		local GunStats = require(gun:FindFirstChild("GunStates"))
+		GunStats["Damage"] = math.huge
+		GunStats["MaxAmmo"] = math.huge
+		GunStats["StoredAmmo"] = math.huge
+		GunStats["CurrentAmmo"] = math.huge
+		GunStats["FireRate"] = 0.02
+		GunStats["Range"] = math.huge
+		GunStats["ReloadTime"] = 0.02
+		GunStats["Bullets"] = 10
+		GunStats["Spread"] = 1
+	else
+		print('PrisonHx - [EditM4A1]: Weapon needs to be in backpack and not equipped!!!')
+		warn('PrisonHx - [EditM4A1]: Weapon needs to be in backpack and not equipped!!!')
+		error('PrisonHx - [EditM4A1]: Weapon needs to be in backpack and not equipped!!!')
+	end
+end)
+
+FH_Hold.F_EditRemington870.MouseButton1Click:Connect(function()
+	singleClick(FH_Hold.F_EditRemington870)
+	if game.Players.LocalPlayer.Backpack:FindFirstChild('Remington 870') then
+		local player = game:GetService("Players").LocalPlayer
+		local gun = player.Backpack:FindFirstChild("Remington 870")
+		local GunStats = require(gun:FindFirstChild("GunStates"))
+		GunStats["Damage"] = math.huge
+		GunStats["MaxAmmo"] = math.huge
+		GunStats["StoredAmmo"] = math.huge
+		GunStats["CurrentAmmo"] = math.huge
+		GunStats["FireRate"] = 0.02
+		GunStats["AutoFire"] = true
+		GunStats["Range"] = math.huge
+		GunStats["ReloadTime"] = 0.02
+		GunStats["Bullets"] = 10
+		GunStats["Spread"] = 1
+	else
+		print('PrisonHx - [EditRemington870]: Weapon needs to be in backpack and not equipped!!!')
+		warn('PrisonHx - [EditRemington870]: Weapon needs to be in backpack and not equipped!!!')
+		error('PrisonHx - [EditRemington870]: Weapon needs to be in backpack and not equipped!!!')
+	end
+end)
+
+FH_Hold.F_EditM9.MouseButton1Click:Connect(function()
+	singleClick(FH_Hold.F_EditM9)
+	if game.Players.LocalPlayer.Backpack:FindFirstChild('M9') then
+		local player = game:GetService("Players").LocalPlayer
+		local gun = player.Backpack:FindFirstChild("M9")
+		local GunStats = require(gun:FindFirstChild("GunStates"))
+		GunStats["Damage"] = math.huge
+		GunStats["MaxAmmo"] = math.huge
+		GunStats["StoredAmmo"] = math.huge
+		GunStats["CurrentAmmo"] = math.huge
+		GunStats["FireRate"] = 0.02
+		GunStats["AutoFire"] = true
+		GunStats["Range"] = math.huge
+		GunStats["ReloadTime"] = 0.02
+		GunStats["Bullets"] = 10
+		GunStats["Spread"] = 1
+	else
+		print('PrisonHx - [EditM9]: Weapon needs to be in backpack and not equipped!!!')
+		warn('PrisonHx - [EditM9]: Weapon needs to be in backpack and not equipped!!!')
+		error('PrisonHx - [EditM9]: Weapon needs to be in backpack and not equipped!!!')
+	end
+end)
+
+FH_Hold.F_EditTaser.MouseButton1Click:Connect(function()
+	singleClick(FH_Hold.F_EditTaser)
+	if game.Players.LocalPlayer.Backpack:FindFirstChild('Taser') then
+		local player = game:GetService("Players").LocalPlayer
+		local gun = player.Backpack:FindFirstChild("Taser")
+		local GunStats = require(gun:FindFirstChild("GunStates"))
+		GunStats["MaxAmmo"] = math.huge
+		GunStats["CurrentAmmo"] = math.huge
+		GunStats["Range"] = math.huge
+		GunStats["Spread"] = 1
+		GunStats["ReloadTime"] = 0.02
+		GunStats["Bullets"] = 10
+	else
+		print('PrisonHx - [EditTaser]: Weapon needs to be in backpack and not equipped!!!')
+		warn('PrisonHx - [EditTaser]: Weapon needs to be in backpack and not equipped!!!')
+		error('PrisonHx - [EditTaser]: Weapon needs to be in backpack and not equipped!!!')
+	end
+end)
+
+FH_Hold.F_EditAK47.MouseButton1Click:Connect(function()
+	singleClick(FH_Hold.F_EditAK47)
+	if game.Players.LocalPlayer.Backpack:FindFirstChild('AK-47') then
+		local player = game:GetService("Players").LocalPlayer
+		local gun = player.Backpack:FindFirstChild("AK-47")
+		local GunStats = require(gun:FindFirstChild("GunStates"))
+		GunStats["Damage"] = math.huge
+		GunStats["MaxAmmo"] = math.huge
+		GunStats["StoredAmmo"] = math.huge
+		GunStats["CurrentAmmo"] = math.huge
+		GunStats["FireRate"] = 0.02
+		GunStats["Range"] = math.huge
+		GunStats["ReloadTime"] = 0.02
+		GunStats["Bullets"] = 10
+		GunStats["Spread"] = 1
+	else
+		print('PrisonHx - [EditAK47]: Weapon needs to be in backpack and not equipped!!!')
+		warn('PrisonHx - [EditAK47]: Weapon needs to be in backpack and not equipped!!!')
+		error('PrisonHx - [EditAK47]: Weapon needs to be in backpack and not equipped!!!')
+	end
+end)
+
+FH_Hold.F_RemoveDoors.MouseButton1Click:Connect(function()
+	singleClick(FH_Hold.F_RemoveDoors)
+	game.Workspace.Doors:Destroy()
+end)
+
+FH_Hold.F_GetTools.MouseButton1Click:Connect(function()
+	singleClick(FH_Hold.F_GetTools)
+	local weapons = {"Crude Knife", "Sharpened stick", "Extendo mirror"}
+	for i, v in pairs(game.ReplicatedStorage.Tools:GetChildren()) do
+		for j, k in pairs(weapons) do
+	   		if v.Name == k then
+	   			v:Clone().Parent = game.Players.LocalPlayer.Backpack
+	   		end
+	    end
+	end
+end)
+
+FH_Hold.F_GetWeapons.MouseButton1Click:Connect(function()
+	singleClick(FH_Hold.F_GetWeapons)
+	local weapons = {"Remington 870", "M9", "AK-47", "M4A1", "Riot Shield"}
+ 	for i, v in pairs(game.Workspace["Prison_ITEMS"].giver:GetChildren()) do
+ 		for j, k in pairs(weapons) do
+ 			if v.Name == k then
+ 				v:MoveTo(game.Players.LocalPlayer.Character.Torso.Position)
+ 			end
+ 		end
+ 	end
+end)
+
+FH_Hold.F_GetBtools.MouseButton1Click:Connect(function()
+	singleClick(FH_Hold.F_GetBtools)
+	Instance.new('HopperBin', game.Players.LocalPlayer.Backpack).BinType = 2
+	Instance.new('HopperBin', game.Players.LocalPlayer.Backpack).BinType = 3
+	Instance.new('HopperBin', game.Players.LocalPlayer.Backpack).BinType = 4
+	loadstring(game:GetObjects('rbxassetid://552440069')[1].Source)()
+end)
+
+--//Functions - Teleports//--
+TH_Hold.T_Cafe.MouseButton1Click:Connect(function()
+	singleClick(TH_Hold.T_Cafe)
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(920.159363, 99.9899597, 2324.98804))
+end)
+
+TH_Hold.T_CriminalBase.MouseButton1Click:Connect(function()
+	singleClick(TH_Hold.T_CriminalBase)
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-927.690796, 94.1287842, 2065.896))
+end)
+
+TH_Hold.T_CriminalCarSpawn.MouseButton1Click:Connect(function()
+	singleClick(TH_Hold.T_CriminalCarSpawn)
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-914.77478, 95.1273117, 2157.39209))
+end)
+
+TH_Hold.T_GaurdArmory.MouseButton1Click:Connect(function()
+	singleClick(TH_Hold.T_GaurdArmory)
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(836.878357, 99.9900055, 2263.08765))
+end)
+
+TH_Hold.T_GaurdCarSpawn.MouseButton1Click:Connect(function()
+	singleClick(TH_Hold.T_GaurdCarSpawn)
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(587.64978, 98.2000275, 2504.70703))
+end)
+
+TH_Hold.T_MainHall.MouseButton1Click:Connect(function()
+	singleClick(TH_Hold.T_MainHall)
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(912.047729, 99.9900055, 2366.17798))
+end)
+
+TH_Hold.T_OutsidePrison.MouseButton1Click:Connect(function()
+	singleClick(TH_Hold.T_OutsidePrison)
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(466.135406, 98.0399399, 2222.07495))
+end)
+
+TH_Hold.T_Yard.MouseButton1Click:Connect(function()
+	singleClick(TH_Hold.T_Yard)
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(798.367188, 97.9999466, 2471.66431))
+end)
